@@ -1,7 +1,7 @@
 import java.util.Arrays;
 
 
-public class Main {
+public class Exercise1 {
     public static void main(String[] args) {
 
                       //---------ESERCIZIO 1.1----------------//
@@ -43,18 +43,19 @@ public class Main {
     public static String concat(String str, int num) {
         return str + num;
     }
-    //----------METODO 1.3---------//
+
+            //----------METODO 1.3---------//
     public static String[] aggiungiElemento(String[] array, String nuovaStringa) {
         String[] nuovoArray = new String[6];
 
 
-        // Copia i primi tre elementi dall'array iniziale al nuovo array
+        // Copio i primi tre elementi dall'array iniziale al nuovo array
         System.arraycopy(array, 0, nuovoArray, 0, 3);
 
-        // Copia gli elementi dalla quarta posizione in avanti spostandoli in avanti di due posizioni
-        System.arraycopy(array, 3, nuovoArray, 5, array.length - 3);
+        // Copio gli elementi dalla quarta posizione in avanti spostandoli in avanti di due posizioni
+        System.arraycopy(array, 3, nuovoArray, 4, array.length - 3);
 
-        // Aggiunge la nuova stringa al terzo posto
+        // Aggiungo la nuova stringa al terzo posto
         nuovoArray[2] = nuovaStringa;
 
         return nuovoArray;
